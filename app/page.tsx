@@ -124,15 +124,15 @@ export default function Home() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4">Key Statistics</h3>
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="text-center p-4 bg-secondary/20 rounded-lg">
-                      <div className="text-3xl font-bold text-primary mb-1">
+                    <div className="text-center p-4 bg-[#64BBE7]/20 rounded-lg">
+                      <div className="text-3xl font-bold text-[#192F59] mb-1">
                         25+
                       </div>
                       <div className="text-sm text-muted-foreground">
                         Faculty Members
                       </div>
                     </div>
-                    <div className="text-center p-4 bg-secondary/20 rounded-lg">
+                    <div className="text-center p-4 bg-[#64BBE7]/20 rounded-lg">
                       <div className="text-3xl font-bold text-primary mb-1">
                         500+
                       </div>
@@ -140,16 +140,16 @@ export default function Home() {
                         Students
                       </div>
                     </div>
-                    <div className="text-center p-4 bg-accent/20 rounded-lg">
-                      <div className="text-3xl font-bold text-accent mb-1">
+                    <div className="text-center p-4 bg-[#EC85BA]/20 rounded-lg">
+                      <div className="text-3xl font-bold text-[#D11479] mb-1">
                         8
                       </div>
                       <div className="text-sm text-muted-foreground">
                         Laboratories
                       </div>
                     </div>
-                    <div className="text-center p-4 bg-accent/20 rounded-lg">
-                      <div className="text-3xl font-bold text-accent mb-1">
+                    <div className="text-center p-4 bg-[#EC85BA]/20 rounded-lg">
+                      <div className="text-3xl font-bold text-[#D11479] mb-1">
                         15+
                       </div>
                       <div className="text-sm text-muted-foreground">
