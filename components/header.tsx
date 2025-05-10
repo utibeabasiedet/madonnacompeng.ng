@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
@@ -12,7 +13,6 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "Staff", href: "/staff" },
   { label: "Curriculum", href: "/curriculum" },
- 
   { label: "News", href: "/news" },
   { label: "Resources", href: "/resources" },
   { label: "Contact", href: "/contact" },
@@ -20,20 +20,22 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#fff] text-[#192F59] shadow-lg">
-      <div className="container mx-auto flex items-center justify-between px-4 py-3">
+    <nav className="fixed top-0 left-0 w-full h-[12vh] z-50 bg-[#fff] text-[#192F59] shadow-md">
+      <div className="container mx-auto flex items-center h-auto justify-between px-4 py-3">
         {/* Logo */}
         <Link href="/" className="text-lg font-bold tracking-wider">
-          <Image
-            src="/images/MadonnaUniversityNigeria.png"
-            alt="Picture of the author"
-            width={300} 
-            height={50} 
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
-          />
+          <div className="relative">
+            <Image
+              src="/images/MadonnaUniversityNigeria.png"
+              alt="Logo"
+              width={300}
+              height={50}
+              className="w-48 md:w-72 object-contain" // 👈 smaller logo on mobile
+            />
+          </div>
         </Link>
 
         {/* Desktop nav */}
@@ -42,7 +44,10 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="hover:text-[#64BBE7] transition-colors duration-200">
+              className={`transition-colors duration-200 ${
+                pathname === link.href ? "text-[#D11479] font-semibold" : "hover:text-[#64BBE7]"
+              }`}
+            >
               {link.label}
             </Link>
           ))}
@@ -52,7 +57,8 @@ export default function Navbar() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
-          className="md:hidden">
+          className="md:hidden text-[#192F59]"
+        >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
@@ -64,14 +70,19 @@ export default function Navbar() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="md:hidden bg-[#192F59] overflow-hidden">
+            transition={{ duration: 0.3 }}
+            className="md:hidden bg-[#192F59] overflow-hidden text-white shadow-inner"
+          >
             <div className="flex flex-col items-center gap-4 py-4">
               {navLinks.map(link => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="w-full text-center py-2 hover:text-[#64BBE7] transition-colors duration-200"
-                  onClick={() => setIsOpen(false)}>
+                  className={`w-full text-center py-2 transition-colors duration-200 ${
+                    pathname === link.href ? "text-[#D11479] font-semibold" : "hover:text-[#64BBE7]"
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
                   {link.label}
                 </Link>
               ))}

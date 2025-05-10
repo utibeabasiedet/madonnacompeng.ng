@@ -75,7 +75,7 @@ export default function Hero() {
   return (
     <div className="relative">
       <Carousel
-        className="w-full h-[90vh] relative overflow-hidden"
+        className="w-full h-[90vh] mt-[12vh] relative overflow-hidden"
         setApi={setApi}
         plugins={[autoplayPlugin.current]}
         opts={{
