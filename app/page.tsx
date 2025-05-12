@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { BookOpen, Calendar, ChevronRight, Cpu, Users } from "lucide-react";
 import Link from "next/link";
+import About from "@/components/about";
 
 export default function Home() {
   return (
@@ -88,6 +89,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <About />
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-primary/10 to-secondary/10 dark:bg-muted/30">
         <div className="container px-4 md:px-6">
           <div className="grid gap-10 md:grid-cols-2 lg:gap-16 items-center">
