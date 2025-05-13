@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full h-[12vh] z-50 bg-[#fff] text-[#192F59] shadow-md">
-      <div className="container mx-auto flex items-center h-auto justify-between px-4 py-3">
+      <div className="container mx-auto flex items-center h-[12vh] justify-between  px-4 py-3">
         {/* Logo */}
         <Link href="/" className="text-lg font-bold tracking-wider">
           <div className="relative">

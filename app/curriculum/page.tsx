@@ -30,7 +30,7 @@ import Banner from "@/components/banner";
 
 export default function CurriculumPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen mt-[12vh]  flex-col">
       <main className="flex-1">
         <Banner
           image="/images/banner-2.avif"
@@ -38,10 +38,10 @@ export default function CurriculumPage() {
           text="Comprehensive course structure for the Computer Engineering program at Madonna University"
         />
 
-        <section className="w-full py-12 md:py-16">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-10 md:grid-cols-3 lg:gap-16">
-              <div className="space-y-4">
+        <section className="w-full relative  py-12 md:py-16">
+          <div className="container bg-black relative   px-4 md:px-6">
+            <div className="grid gap-10 bg-amber-700  md:grid-cols-3 lg:gap-16">
+              <div className="space-y-4  ">
                 <div className="sticky top-24">
                   <div className="space-y-4">
                     <div className="flex items-center gap-2">
@@ -86,7 +86,7 @@ export default function CurriculumPage() {
                         Examination Policies
                       </a>
                     </nav>
-                    <div className="mt-8 space-y-4">
+                    <div className="mt-8 space-y-4  bg-amber-300">
                       <Card className="bg-[#192F59] text-white">
                         <CardContent className="p-4">
                           <div className="flex items-center gap-2 mb-2">

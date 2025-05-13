@@ -7,7 +7,7 @@ import Banner from "@/components/banner";
 
 export default function AboutPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen mt-[12vh] flex-col">
       <main className="flex-1">
         <Banner
           image="/images/banner-2.avif"
