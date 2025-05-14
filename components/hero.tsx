@@ -105,7 +105,7 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="mb-2 inline-block rounded-full bg-[#D11479] px-4 py-1 text-sm font-medium text-white"
+                        className="mb-2 inline-block rounded-full bg-[#64BBE7] px-4 py-1 text-sm font-medium text-white"
                       >
                         {slide.subtitle}
                       </motion.div>

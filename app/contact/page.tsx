@@ -23,7 +23,7 @@ export default function ContactPage() {
 
         <section className="w-full py-12 md:py-24">
           <div className="container px-4 md:px-6">
-            <div className="grid gap-10 md:grid-cols-2 lg:gap-16">
+            <div className="md:grid gap-10 md:grid-cols-2 lg:gap-16">
               <div className="space-y-8">
                 <div>
                   <h2 className="text-3xl font-bold tracking-tighter mb-6">Get In Touch</h2>

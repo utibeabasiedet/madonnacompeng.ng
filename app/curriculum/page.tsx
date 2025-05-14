@@ -39,10 +39,10 @@ export default function CurriculumPage() {
         />
 
         <section className="w-full relative  py-12 md:py-16">
-          <div className="container bg-black relative   px-4 md:px-6">
-            <div className="grid gap-10 bg-amber-700  md:grid-cols-3 lg:gap-16">
+          <div className="container  relative   px-4 md:px-6">
+            <div className="sm:grid gap-10   md:grid-cols-3 lg:gap-16">
               <div className="space-y-4  ">
-                <div className="sticky top-24">
+                <div className="md:sticky top-24">
                   <div className="space-y-4">
                     <div className="flex items-center gap-2">
                       <BookOpen className="h-5 w-5 text-[#D11479]" />
@@ -86,7 +86,7 @@ export default function CurriculumPage() {
                         Examination Policies
                       </a>
                     </nav>
-                    <div className="mt-8 space-y-4  bg-amber-300">
+                    <div className="mt-8 space-y-4  ">
                       <Card className="bg-[#192F59] text-white">
                         <CardContent className="p-4">
                           <div className="flex items-center gap-2 mb-2">
@@ -99,6 +99,7 @@ export default function CurriculumPage() {
                           </p>
                         </CardContent>
                       </Card>
+                     
                       <Card className="bg-[#64BBE7] text-white">
                         <CardContent className="p-4">
                           <div className="flex items-center gap-2 mb-2">
