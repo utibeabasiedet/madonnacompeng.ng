@@ -13,8 +13,6 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "Staff", href: "/staff" },
   { label: "Curriculum", href: "/curriculum" },
-  { label: "News", href: "/news" },
-  { label: "Resources", href: "/resources" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -23,29 +21,27 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 w-full h-[12vh] z-50 bg-[#fff] text-[#192F59] shadow-md">
-      <div className="container mx-auto flex items-center h-[12vh] justify-between  px-4 py-3">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+      <div className="container mx-auto flex items-center justify-between px-4 h-[12vh]">
         {/* Logo */}
-        <Link href="/" className="text-lg font-bold tracking-wider">
-          <div className="relative">
-            <Image
-              src="/images/MadonnaUniversityNigeria.png"
-              alt="Logo"
-              width={300}
-              height={50}
-              className="w-48 md:w-72 object-contain" // 👈 smaller logo on mobile
-            />
-          </div>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/MadonnaUniversityNigeria.png"
+            alt="Logo"
+            width={300}
+            height={50}
+            className="w-44 md:w-64 object-contain"
+          />
         </Link>
 
-        {/* Desktop nav */}
-        <div className="hidden md:flex gap-6">
+        {/* Desktop Nav */}
+        <div className="hidden md:flex gap-8">
           {navLinks.map(link => (
             <Link
               key={link.href}
               href={link.href}
-              className={`transition-colors duration-200 ${
-                pathname === link.href ? "text-[#D11479] font-semibold" : "hover:text-[#64BBE7]"
+              className={`transition-colors font-medium ${
+                pathname === link.href ? "text-[#D11479]" : "hover:text-[#64BBE7] text-[#192F59]"
               }`}
             >
               {link.label}
@@ -53,41 +49,60 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile toggle */}
+        {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
           className="md:hidden text-[#192F59]"
+          aria-label="Toggle Menu"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden bg-[#192F59] overflow-hidden text-white shadow-inner"
-          >
-            <div className="flex flex-col items-center gap-4 py-4">
-              {navLinks.map(link => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`w-full text-center py-2 transition-colors duration-200 ${
-                    pathname === link.href ? "text-[#D11479] font-semibold" : "hover:text-[#64BBE7]"
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </motion.div>
+          <>
+            <motion.div
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ duration: 0.3 }}
+              className="fixed top-0 left-0 w-4/5 max-w-xs h-full bg-[#192F59] text-white z-50 shadow-lg flex flex-col p-6"
+            >
+              <div className="flex justify-between items-center mb-6">
+                <span className="text-lg font-bold">Menu</span>
+                <button onClick={() => setIsOpen(false)}>
+                  <X size={24} />
+                </button>
+              </div>
+              <nav className="flex flex-col gap-4">
+                {navLinks.map(link => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`text-lg ${
+                      pathname === link.href
+                        ? "text-[#D11479] font-semibold"
+                        : "hover:text-[#64BBE7]"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+            </motion.div>
+
+            {/* Overlay background */}
+            <motion.div
+              className="fixed inset-0 bg-black/50 z-40"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsOpen(false)}
+            />
+          </>
         )}
       </AnimatePresence>
     </nav>

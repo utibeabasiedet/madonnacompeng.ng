@@ -134,7 +134,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/logo.jfif"
+                src="/images/realmadonalogo.png"
                 alt="Madonna University Logo"
                 width={50}
                 height={50}

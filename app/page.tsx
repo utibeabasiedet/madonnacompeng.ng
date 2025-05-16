@@ -167,7 +167,7 @@ export default function Home() {
                   <div className="flex items-center gap-4 mb-4">
                     <div className="bg-secondary/20 p-2 rounded-full">
                       <Image
-                        src="/images/nuc.jfif"
+                        src="/images/NUC-LOGO.webp"
                         width={40}
                         height={40}
                         alt="NUC Logo"
