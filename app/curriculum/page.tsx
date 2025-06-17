@@ -123,13 +123,16 @@ export default function CurriculumPage() {
                               <Download className="h-4 w-4 mr-2" />
                               Course Handbook
                             </Button>
+                            <a href="/AcademicCalendar.pdf" target="_blank" rel="noopener noreferrer">
                             <Button
                               variant="outline"
                               size="sm"
-                              className="w-full bg-white/10 hover:bg-white/20 text-white border-white/20">
+                              className="w-full bg-white/10 hover:bg-white/20 text-white border-white/20"
+                            >
                               <Download className="h-4 w-4 mr-2" />
                               Timetable
                             </Button>
+                          </a>
                           </div>
                         </CardContent>
                       </Card>
