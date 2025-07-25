@@ -273,7 +273,7 @@ export default function Footer() {
                   href="mailto:computerengineering@madonnauniversity.edu.ng"
                   className="text-sm text-gray-300 hover:text-[#64BBE7]"
                 >
-                  computerengineering@madonnauniversity.edu.ng
+                  computerengdeptmadonnaun@gmail.com
                 </a>
               </li>
             </ul>

@@ -170,15 +170,15 @@ useEffect(() => {
               </blockquote>
 
               <div className="flex items-center gap-4">
-                <Image
+                {/* <Image
                   src="/images/Registrar.jpg"
                   width={80}
                   height={80}
                   alt="HOD Portrait"
                   className="rounded-full"
-                />
+                /> */}
                 <div>
-                  <h3 className="font-bold">Prof. John Doe</h3>
+                  <h3 className="font-bold">Engr. Dr. Uzoamaka J. Eze</h3>
                   <p className="text-sm text-muted-foreground">
                     Head of Department
                   </p>

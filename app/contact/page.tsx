@@ -90,7 +90,7 @@ export default function ContactPage() {
                               href="mailto:computerengineering@madonnauniversity.edu.ng"
                               className="hover:text-[#D11479]"
                             >
-                              computerengineering@madonnauniversity.edu.ng
+                                computerengdeptmadonnaun@gmail.com
                             </a>
                             <br />
                             Admissions:{" "}
@@ -98,13 +98,7 @@ export default function ContactPage() {
                               admissions@madonnauniversity.edu.ng
                             </a>
                             <br />
-                            HOD&apos;s Office:{" "}
-                            <a
-                              href="mailto:hod.computerengineering@madonnauniversity.edu.ng"
-                              className="hover:text-[#D11479]"
-                            >
-                              hod.computerengineering@madonnauniversity.edu.ng
-                            </a>
+                           
                           </p>
                         </div>
                       </div>

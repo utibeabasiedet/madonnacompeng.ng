@@ -605,7 +605,7 @@ export default function AboutPage() {
             <div className="grid gap-8 md:grid-cols-3">
               <Card className="overflow-hidden">
                 <Image
-                  src="/images/complab.avif"
+                  src="/images/complap.webp"
                   width={400}
                   height={200}
                   alt="Computer Laboratory"
@@ -675,24 +675,7 @@ export default function AboutPage() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="overflow-hidden">
-                <Image
-                  src="/images/robotics.avif"
-                  width={400}
-                  height={200}
-                  alt="Robotics Laboratory"
-                  className="w-full object-cover h-48"
-                />
-                <CardContent className="p-4">
-                  <h3 className="font-bold text-lg mb-2">
-                    Robotics Laboratory
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Equipped with robotics kits and tools for designing and
-                    programming robots.
-                  </p>
-                </CardContent>
-              </Card>
+              
               <Card className="overflow-hidden">
                 <Image
                   src="/images/research.avif"

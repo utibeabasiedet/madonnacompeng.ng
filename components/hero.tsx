@@ -25,14 +25,7 @@ const slides = [
     cta: "Explore Programs",
     link: "/programs",
   },
-  {
-    image: "/images/bg-1.jpg",
-    title: "Cutting-Edge Research",
-    subtitle: "Pushing the boundaries of technology",
-    description: "Our faculty and students collaborate on groundbreaking research initiatives",
-    cta: "View Research",
-    link: "/research",
-  },
+ 
   {
     image: "/images/bg-3.jpg",
     title: "Build Your Future",
