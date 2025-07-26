@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
-import { Download, User } from "lucide-react";
+import {  User } from "lucide-react";
 import Link from "next/link";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
@@ -83,7 +83,7 @@ const About = () => {
                   <div>
                     <h3 className="font-medium">Computer Engineering</h3>
                     <p className="text-sm text-muted-foreground">
-                     "We don’t just build machines — we shape tomorrow."
+                     We don’t just build machines — we shape tomorrow.
                     </p>
                   </div>
                   {/* <Button variant="ghost" size="sm" className="ml-auto">
