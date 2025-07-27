@@ -169,7 +169,7 @@ export default function CourseAllocationPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br mt-[50px] from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {/* Header Section */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-12">
         <div className="container mx-auto px-4">
