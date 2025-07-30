@@ -2,14 +2,14 @@
 import {
   ChevronRight,
   BookOpen,
-  // Download,
-  // FileText,
+  Download,
+  FileText,
   Calendar,
   Clock,
   GraduationCap,
 } from "lucide-react";
 
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,

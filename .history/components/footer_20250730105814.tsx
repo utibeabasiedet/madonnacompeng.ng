@@ -199,7 +199,12 @@ export default function Footer() {
                   About Department
                 </Link>
               </li>
-             
+              <li>
+                <Link href="/research" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
+                  <ArrowRight size={14} className="mr-2 text-[#D11479]" />
+                  Research
+                </Link>
+              </li>
               <li>
                 <Link href="/staff" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
                   <ArrowRight size={14} className="mr-2 text-[#D11479]" />

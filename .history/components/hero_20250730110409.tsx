@@ -22,8 +22,8 @@ const slides = [
     title: "Shaping Tomorrow's Innovators",
     subtitle: "Discover excellence in Computer Engineering education",
     description: "Join a community dedicated to technological advancement and innovation",
-    cta: "Explore ",
-    link: "/curriculum",
+    cta: "Explore Programs",
+    link: "/progr",
   },
  
   {
@@ -31,8 +31,8 @@ const slides = [
     title: "Build Your Future",
     subtitle: "World-class facilities and expert guidance",
     description: "Prepare for a successful career with hands-on learning and industry connections",
-    cta: "Explore Research",
-    link: "/research",
+    cta: "Apply Now",
+    link: "/admission",
   },
 ]
 

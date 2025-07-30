@@ -199,9 +199,14 @@ export default function Footer() {
                   About Department
                 </Link>
               </li>
-             
               <li>
-                <Link href="/staff" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
+                <Link href="/programs" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
+                  <ArrowRight size={14} className="mr-2 text-[#D11479]" />
+                  Academic Programs
+                </Link>
+              </li>
+              <li>
+                <Link href="/faculty" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
                   <ArrowRight size={14} className="mr-2 text-[#D11479]" />
                   Faculty & Staff
                 </Link>
@@ -221,10 +226,15 @@ export default function Footer() {
               <li>
                 <Link href="/news" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
                   <ArrowRight size={14} className="mr-2 text-[#D11479]" />
-                  Events
+                  News & Events
                 </Link>
               </li>
-            
+              <li>
+                <Link href="/admission" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
+                  <ArrowRight size={14} className="mr-2 text-[#D11479]" />
+                  Admission
+                </Link>
+              </li>
               <li>
                 <Link href="/contact" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
                   <ArrowRight size={14} className="mr-2 text-[#D11479]" />

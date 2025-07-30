@@ -10,7 +10,7 @@ import blog1 from '../public/images/bg-1.jpg'
 import { useEffect, useState } from "react";
 // import { getBlogPosts } from "../lib/sanity"
 
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
  // Default blog posts to use when Sanity is not configured or when loading fails
  const defaultBlogPosts = [
@@ -341,9 +341,9 @@ useEffect(() => {
                   ))}
             </div>
             <div className="flex justify-center">
-              {/* <Link href="/blog">
+              <Link href="/blog">
                 <Button variant="outline">View All Blog Posts</Button>
-              </Link> */}
+              </Link>
             </div>
           </div>
         </section>

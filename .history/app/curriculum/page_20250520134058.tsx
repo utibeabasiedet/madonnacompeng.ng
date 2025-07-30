@@ -2,14 +2,14 @@
 import {
   ChevronRight,
   BookOpen,
-  // Download,
-  // FileText,
+  Download,
+  FileText,
   Calendar,
   Clock,
   GraduationCap,
 } from "lucide-react";
 
-// import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -109,7 +109,7 @@ export default function CurriculumPage() {
                           <p className="text-sm">5 Years (10 Semesters)</p>
                         </CardContent>
                       </Card>
-                      {/* <Card className="bg-[#D11479] text-white">
+                      <Card className="bg-[#D11479] text-white">
                         <CardContent className="p-4">
                           <div className="flex items-center gap-2 mb-2">
                             <FileText className="h-5 w-5 text-white" />
@@ -135,7 +135,7 @@ export default function CurriculumPage() {
                           </a>
                           </div>
                         </CardContent>
-                      </Card> */}
+                      </Card>
                     </div>
                   </div>
                 </div>

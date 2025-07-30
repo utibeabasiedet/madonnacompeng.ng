@@ -199,9 +199,14 @@ export default function Footer() {
                   About Department
                 </Link>
               </li>
-             
               <li>
-                <Link href="/staff" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
+                <Link href="/programs" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
+                  <ArrowRight size={14} className="mr-2 text-[#D11479]" />
+                  Academic Programs
+                </Link>
+              </li>
+              <li>
+                <Link href="/faculty" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
                   <ArrowRight size={14} className="mr-2 text-[#D11479]" />
                   Faculty & Staff
                 </Link>
@@ -221,10 +226,15 @@ export default function Footer() {
               <li>
                 <Link href="/news" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
                   <ArrowRight size={14} className="mr-2 text-[#D11479]" />
-                  Events
+                  News & Events
                 </Link>
               </li>
-            
+              <li>
+                <Link href="/admission" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
+                  <ArrowRight size={14} className="mr-2 text-[#D11479]" />
+                  Admission
+                </Link>
+              </li>
               <li>
                 <Link href="/contact" className="text-sm text-gray-300 hover:text-[#64BBE7] flex items-center">
                   <ArrowRight size={14} className="mr-2 text-[#D11479]" />
@@ -295,7 +305,12 @@ export default function Footer() {
               <p className="text-sm text-gray-300 font-medium">Annual Tech Exhibition</p>
               <p className="text-sm text-gray-300">May 15, 2025 | 10:00 AM</p>
               <p className="text-sm text-gray-300">Engineering Complex</p>
-             
+              <Link
+                href="/events/tech-exhibition"
+                className="mt-2 inline-block text-xs text-[#EC85BA] hover:text-[#EC85BA]/80"
+              >
+                Learn More →
+              </Link>
             </div>
           </div>
         </div>

@@ -31,8 +31,8 @@ const slides = [
     title: "Build Your Future",
     subtitle: "World-class facilities and expert guidance",
     description: "Prepare for a successful career with hands-on learning and industry connections",
-    cta: "Explore Research",
-    link: "/research",
+    cta: "Explore ",
+    link: "/admission",
   },
 ]
 

@@ -43,7 +43,7 @@ export default function AboutPage() {
                 </p>
               </div>
               <Image
-                src="/images/madonnaabout.jpeg"
+                src="/images/"
                 width={600}
                 height={400}
                 alt="Computer Engineering Department Building"
