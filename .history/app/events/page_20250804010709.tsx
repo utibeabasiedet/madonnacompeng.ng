@@ -990,7 +990,10 @@ export default function MadonnaUniversityCalendar() {
     })
   }, [activeTab, searchTerm, selectedMonth, selectedCategory])
 
-
+  const downloadCalendar = () => {
+    // In a real application, this would generate and download a PDF or ICS file
+    alert("Calendar download feature would be implemented here")
+  }
 
   return (
     <div className="min-h-screen mt-[100px] bg-gradient-to-br from-blue-50 via-white to-purple-50">
