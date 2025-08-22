@@ -2044,7 +2044,7 @@ export default function CurriculumPage() {
                                 <td className="px-4 py-2 text-sm">45 - 49</td>
                                 <td className="px-4 py-2 text-sm">D</td>
                                 <td className="px-4 py-2 text-sm">2.0</td>
-                                <td className="px-4 py-2 text-sm">Fair</td>
+                                <td className="px-4 py-2 text-sm">Pass</td>
                               </tr>
                               <tr className="bg-white">
                                 <td className="px-4 py-2 text-sm">40 - 44</td>
