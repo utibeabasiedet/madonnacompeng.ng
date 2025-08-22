@@ -107,7 +107,7 @@ useEffect(() => {
             <Card className="transition-all hover:shadow-md">
               <CardContent className="flex flex-col items-center justify-center p-6 group">
                 <Users className="h-14 w-14 text-[#64BBE7] transition-transform duration-300 group-hover:scale-110" />
-                <h3 className="text-lg font-bold mt-4">Faculty</h3>
+                <h3 className="text-lg font-bold mt-4">Department</h3>
                 <p className="text-sm text-muted-foreground text-center mb-4">
                   Meet our experienced lecturers
                 </p>
